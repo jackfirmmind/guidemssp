@@ -358,3 +358,4 @@ mark { background: var(--signal-soft); color: inherit; padding: 0 2px; border-ra
 .grid-2.top, .grid-3.top { align-items: start; }
 .panel .lesson-item { grid-template-columns: minmax(0, 1fr) auto; gap: 4px 14px; padding: 12px 14px; }
 .panel .lesson-item .mono { grid-column: 1 / -1; }
+.side-note { margin: auto 0 0; padding: 0 10px; font-size: .75rem; line-height: 1.45; color: var(--muted); }

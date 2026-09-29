@@ -1,4 +1,4 @@
-# J2 Field Manual
+# J2 Prep Field Manual
 
 A self-paced crash course for starting as **AI Automation & Business Systems Engineer at J2 MSSP**. It's a static web app with no build step and no server: progress, notes, quiz scores and flashcards are saved in your browser.
 
@@ -42,3 +42,7 @@ To add a lesson, add an object to a module's `lessons` array in `js/content/mXX-
 ## Backup
 
 Progress lives in your browser's `localStorage`. To move it to another device, go to **Settings → Copy progress**, then paste that text into **Restore** on the other device.
+
+## Disclaimer
+
+A personal study guide built from public information. It is not affiliated with, endorsed by, or produced by J2 Software / J2 MSSP.
