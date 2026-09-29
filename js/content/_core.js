@@ -1,19 +1,10 @@
-/* Course data container + tiny helpers used by the content files to write lesson HTML. */
-window.COURSE = {
-  modules: [],
-  glossary: [],
-  labs: [],
-  scenarios: [],
-  scorecard: [],
-  plan: [],
-  questions: []
-};
+/* Course data container + small helpers used by the content files. */
+window.COURSE = { modules: [], glossary: [], areas: [], scorecard: [], scorecardAreas: [], questions: [], phrases: [], pitch: '' };
 
 window.H = (function () {
   function esc(s) {
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
-  var labels = { j2: 'At J2', verify: 'Verify on day one', warn: 'Watch out', tip: 'Try this' };
   return {
     esc: esc,
     flow: function (steps) {
@@ -26,12 +17,6 @@ window.H = (function () {
         '</tr></thead><tbody>' + rows.map(function (r) {
           return '<tr>' + r.map(function (c) { return '<td>' + c + '</td>'; }).join('') + '</tr>';
         }).join('') + '</tbody></table></div>';
-    },
-    note: function (kind, html) {
-      return '<aside class="callout callout-' + kind + '"><span class="callout-label">' + (labels[kind] || kind) + '</span>' + html + '</aside>';
-    },
-    code: function (src, lang) {
-      return '<pre class="code" data-lang="' + (lang || '') + '"><code>' + esc(src.replace(/^\n/, '')) + '</code></pre>';
     }
   };
 })();

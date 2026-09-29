@@ -7,7 +7,7 @@
 <title>J2 Prep Field Manual</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@500&display=swap">
 <link rel="stylesheet" href="css/app.css">
 <!-- build:head-end -->
 </head>
@@ -16,54 +16,35 @@
 <div class="shell">
   <header class="topbar">
     <button class="icon-btn" id="menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" data-act="toggle-nav">Menu</button>
-    <a class="brand" href="#home"><span class="brand-mark">FM</span><span class="brand-name">Field Manual</span></a>
+    <a class="brand" href="#home"><span class="brand-mark">FM</span><span class="brand-name">J2 Crash Course</span></a>
   </header>
   <nav class="sidebar" id="sidebar" aria-label="Course">
-    <a class="brand brand-side" href="#home"><span class="brand-mark">FM</span><span class="brand-name">Field Manual</span></a>
-    <p class="side-role">Pre-start crash course for the AI Automation &amp; Business Systems Engineer role at J2 MSSP</p>
+    <a class="brand brand-side" href="#home"><span class="brand-mark">FM</span><span class="brand-name">J2 Crash Course</span></a>
+    <div class="side-progress" id="nav-progress"></div>
+    <div class="nav-group">
+      <a href="#home" data-nav="home">Home and plan</a>
+      <a href="#course" data-nav="course">Course map</a>
+      <a href="#cheatsheet" data-nav="cheatsheet">Cheat sheet</a>
+      <a href="#cards" data-nav="cards">Flashcards <span class="nav-count" id="nav-due"></span></a>
+      <a href="#words" data-nav="words">Word list</a>
+      <a href="#scorecard" data-nav="scorecard">Practice scorecard</a>
+      <a href="#questions" data-nav="questions">Day-one questions</a>
+      <a href="#settings" data-nav="settings">Settings</a>
+    </div>
     <form class="side-search" id="search-form" role="search">
       <label class="sr-only" for="search-input">Search the course</label>
-      <input id="search-input" type="search" placeholder="Search lessons &amp; terms" autocomplete="off">
+      <input id="search-input" type="search" placeholder="Search" autocomplete="off">
     </form>
-    <div class="nav-group">
-      <span class="nav-label">Study</span>
-      <a href="#home" data-nav="home">Dashboard</a>
-      <a href="#modules" data-nav="modules">Curriculum</a>
-      <a href="#labs" data-nav="labs">Labs</a>
-      <a href="#scenarios" data-nav="scenarios">Shift scenarios</a>
-      <a href="#cards" data-nav="cards">Flashcards <span class="nav-count" id="nav-due"></span></a>
-      <a href="#glossary" data-nav="glossary">Glossary</a>
-    </div>
-    <div class="nav-group">
-      <span class="nav-label">Tools</span>
-      <a href="#scorecard" data-nav="scorecard">Resilience scorecard</a>
-      <a href="#scorer" data-nav="scorer">Automation scorer</a>
-    </div>
-    <div class="nav-group">
-      <span class="nav-label">Get ready</span>
-      <a href="#plan" data-nav="plan">30-60-90 plan</a>
-      <a href="#questions" data-nav="questions">Day-one questions</a>
-      <a href="#settings" data-nav="settings">Settings &amp; backup</a>
-    </div>
+    <div class="side-size"><span class="nav-label">Text size</span><div id="side-size"></div></div>
     <p class="side-note">Personal study guide built from public information. Not affiliated with or produced by J2.</p>
   </nav>
   <main class="main" id="main" tabindex="-1"></main>
 </div>
 <script src="js/content/_core.js"></script>
-<script src="js/content/m00-start.js"></script>
-<script src="js/content/m01-company.js"></script>
-<script src="js/content/m02-security.js"></script>
-<script src="js/content/m03-business.js"></script>
-<script src="js/content/m04-soc.js"></script>
-<script src="js/content/m05-stack.js"></script>
-<script src="js/content/m06-grc.js"></script>
-<script src="js/content/m07-ai.js"></script>
-<script src="js/content/m08-systems.js"></script>
-<script src="js/content/m09-toolkit.js"></script>
-<script src="js/content/m10-first90.js"></script>
+<script src="js/content/course-1.js"></script>
+<script src="js/content/course-2.js"></script>
+<script src="js/content/course-3.js"></script>
 <script src="js/content/glossary.js"></script>
-<script src="js/content/labs.js"></script>
-<script src="js/content/scenarios.js"></script>
 <script src="js/content/extras.js"></script>
 <script src="js/app.js"></script>
 <!-- build:body-end -->
