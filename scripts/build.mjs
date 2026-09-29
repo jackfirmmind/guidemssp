@@ -26,4 +26,5 @@ const bodyPart = inline(between('<!-- build:body-start -->', '<!-- build:body-en
 mkdirSync(join(root, 'dist'), { recursive: true });
 writeFileSync(join(root, 'dist/artifact.html'), `${headPart}\n${bodyPart}\n`);
 writeFileSync(join(root, 'dist/j2-field-manual.html'), inline(html));
+writeFileSync(join(root, 'dist/index.html'), inline(html));
 console.log('built dist/artifact.html and dist/j2-field-manual.html');
